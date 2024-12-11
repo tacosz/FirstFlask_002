@@ -16,7 +16,6 @@ def submit():
     request_hero = request.form.get('request_hero')
     catatan_penjoki = request.form.get('catatan_penjoki')
     star_order = request.form.get('star_order')
-    diamond_order = request.form.get('diamond_order')
 
     # Render the response.html template with form data
     return render_template(
@@ -27,7 +26,6 @@ def submit():
         request_hero=request_hero,
         catatan_penjoki=catatan_penjoki,
         star_order=star_order,
-        diamond_order=diamond_order
     )
 
 if __name__ == '__main__':
