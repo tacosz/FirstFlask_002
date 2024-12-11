@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="response-container" style="text-align: left;">
+        <h1>Form Submission Successful</h1>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Password:</strong> {{ password }}</p>
+        <p><strong>Request Hero:</strong> {{ request_hero }}</p>
+        <p><strong>Catatan Penjoki:</strong> {{ catatan_penjoki }}</p>
+        <p><strong>Star Order:</strong> {{ star_order }}</p>
+        <p><strong>Diamond Order:</strong> {{ diamond_order }}</p>
+        <a href="/" class="back-button">kembali ke Form</a>
+    </div>
+</body>
+</html>
